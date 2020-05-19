@@ -1,0 +1,309 @@
+<!DOCTYPE html>  
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Home</title>
+
+  	<!-- Bootstrap core css -->
+  	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  	<!-- Bootstrap core css -->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<!-- Magnific-popup css -->
+  	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  	<!-- Font Awesome icons -->
+  	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style>
+	.buttonimg{
+		width: 250px;
+    	height:210px;
+		color:skyblue;
+		text-align: center;
+    	background: url("images/heart.png") no-repeat;
+    	border-style: none;
+		font-size: 40px;
+		
+	}
+	</style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top">
+
+<!-- Navigation Bar -->
+   <nav class="navbar navbar-fixed-top navbar-default">
+     <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a  class="navbar-brand page-scroll" href="Overview.html">
+              <span>[Overview]</span>
+            </a>
+         </div>
+         <div class="collapse navbar-collapse navbar-right" id="menu">
+            <ul class="nav navbar-nav">
+              <li class="active lien"><a href="#"><i class="fa fa-home sr-icons"></i> Home</a></li>
+              <li class=" lien"><a href="about.html"><i class="fa fa-bookmark sr-icons"></i> About</a></li>
+ <!--             <li class=" lien"><a href="blog.html"><i class="fa fa-file-text sr-icons"></i> Blog</a></li>
+              <li><a href="contact.html"><i class="fa fa-phone-square sr-icons"></i> Contact</a></li>-->
+            </ul>
+         </div>
+     </div>
+   </nav>
+<!-- End of Navigation Bar -->
+
+<!-- Principal Content Start -->
+   <div id="index">
+
+    <!-- Header -->
+      <div class="row">
+         <div class="col-xs-12 intro">
+            <div class="carousel-inner">
+               <div class="item active">
+                <img class="img-responsive" src="images/index/background.jpg" alt="header picture">
+               </div>
+               <div class="carousel-caption">
+                 <h1>SN &amp; XW</h1>
+                 <hr>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="index-body">
+      <!-- Pictures Navigation table -->
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <td><a class="link active" href="#category0" data-toggle="tab">Everything Starts</a></td>
+				<td><a class="link" href="#category16" data-toggle="tab">2016</a></td>
+                <td><a class="link" href="#category17" data-toggle="tab">2017</a></td>
+                <td><a class="link" href="#category18" data-toggle="tab">2018</a></td>
+				<td><a class="link" href="#category19" data-toggle="tab">2019</a></td>
+				<td><a class="link" href="#category20" data-toggle="tab">2020</a></td>
+				<td><a class="link" href="#Painting" data-toggle="tab">Paintings</a></td>
+				  <td><a class="link" href="#Video" data-toggle="tab">Videos</a>
+              </tr>
+            </thead>
+          </table>
+          <hr>
+        </div>
+      
+      <!-- Navigation Table Content -->
+        <div class="tab-content">
+
+        <!-- Everything Starts pictures -->
+           <div id="category0" class="tab-pane active" >		   
+              <div id="C0pic" class="row popup-gallery">		
+			    <div class="col-xs-12 col-sm-6 col-md-3">
+			   
+			   <button id="buttoneverything" onClick="creatImgDiv(1,13,'C0pic','EverythingStarts','兰州')">Load More</button></div>
+              </div>
+			               
+           </div>
+        <!-- End of Everything Starts pictures -->
+
+        <!--2016 pictures -->
+           <div id="category16" class="tab-pane">
+             <div id="2016pic" class="row popup-gallery">			              
+             
+              <div class="col-xs-12 col-sm-6 col-md-3">			   
+			   <button id="but2016" type = "submit " onClick="creatImgDiv(1,21,'2016pic','2016')">Load More</button></div>
+				 </div>
+           </div>
+        <!-- End of 2016 pictures -->
+
+        <!-- 2017 Category Pictures -->
+           <div id="category17" class="tab-pane">	
+             <div id="2017pic" class="row popup-gallery"> 
+				 
+               <div class="col-xs-12 col-sm-6 col-md-3">
+			   <button id="but2017" type = "submit " onClick="creatImgDiv(1,19,'2017pic','2017')">Load More</button></div>
+             
+				</div>
+           </div>
+        <!-- 2017 Category Pictures -->
+
+			<!-- 2018 Category Pictures -->
+           <div id="category18" class="tab-pane">	
+             <div id="2018pic" class="row popup-gallery"> 
+				
+               <div class="col-xs-12 col-sm-6 col-md-3">
+			   <button id="but2018" type = "submit " onClick="creatImgDiv(1,11,'2018pic','2018')">Load More</button></div>
+              </div>
+				
+           </div>
+        <!-- End of 2018 pictures -->
+			
+			<!-- 2019 Pictures -->
+           <div id="category19" class="tab-pane">
+			   <script>onload="javascript:creatImgDiv(1,12,'2019pic','/2019/');"></script> 
+             <div id="2019pic"  class="row popup-gallery">
+				 <div class="col-xs-12 col-sm-6 col-md-3">
+			   <button id="but2019" class="buttonimg" type = "submit " onClick="creatImgDiv(1,12,'2019pic','2019')">Load More</button></div>
+             </div>          
+           </div>
+        <!-- End of 2019 pictures -->
+	
+		<!-- 2020 Pictures -->
+       <div id="category20" class="tab-pane">	
+             <div id="2020pic" class="row popup-gallery"> 
+				 
+               <div class="col-xs-12 col-sm-6 col-md-3">
+			   <button id="but2020" type = "submit " onClick="creatImgDiv(1,19,'2020pic','2020')">Load More</button></div>
+             </div>
+				
+           </div>
+        <!-- End of 2020 pictures -->
+			
+			<!-- Painting Pictures -->
+       <div id="Painting" class="tab-pane">	
+             <div id="NansPainting" class="row popup-gallery"> 
+				 
+               <div class="col-xs-12 col-sm-6 col-md-3">
+			   <button id="butPainting" type = "submit " onClick="creatImgDiv(1,19,'NansPainting','Painting')">Load More</button></div>
+             </div>
+				
+           </div>
+			
+			<div id="VideoCatgory" class="tab-pane">	
+             <div id="Video" class="row popup-gallery"> 
+				 
+               <div class="col-xs-12 col-sm-6 col-md-3">
+			   <button id="butVideo" type = "submit " onClick="creatImgDiv(1,19,'Video','Video')">Load More</button></div>
+             </div>
+				
+           </div>
+        <!-- End of Painting pictures -->
+	
+        </div>
+    <!-- End of Navigation Table Content -->
+      </div><!-- End of Index-body box -->
+
+    <!-- Newsletter form -->
+      <div class="index-form text-center">
+        <h3>SUSCRIBE TO OUR NEWSLETTER </h3>
+        <h5>Suscribe to receive our News and Gifts</h5>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <div class="col-xs-12 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+            <input class="form-control" type="text" placeholder="Type here your email address">
+            <a href="" class="btn btn-lg sr-button">SUBSCRIBE</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    <!-- End of Newsletter form -->  
+
+    <!-- Box within partners name and logo -->
+      <div class="last-box row">
+        <div class="col-xs-12 col-sm-4 col-sm-push-4 last-block"> </div>
+      </div>
+    <!-- End of Box within partners name and logo -->
+
+   </div><!-- End of index box -->
+
+   <!-- Footer -->
+   <footer class="home-page">
+     <div class="container text-muted text-center">
+       <div class="row">
+         <ul class="nav col-sm-4">
+           <li class="footer-number"><i class="fa fa-phone sr-icons"></i> (+86) 18810695762 </li>
+           <li><em class="fa fa-envelope sr-icons"></em> z645916403@outlook.com</li>
+           <li>Copyright &copy; 2020. SN &amp; XW. </li>
+           <li>All rights reserved.</li>
+         </ul>
+         <ul class="list-inline social-buttons col-sm-4 col-sm-push-4">
+            <li><a href="#"><i class="fa fa-facebook sr-icons"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-twitter sr-icons"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-google-plus sr-icons"></i></a>
+            </li>
+         </ul>
+       </div>
+     </div>
+   </footer>
+
+   <!-- Jquery -->
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <!-- Bootstrap core Javascript -->
+   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+   <!-- Plugins -->
+   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+   <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+   <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+<script>
+	var imgLab;
+	function imgLabel(result){
+      //回调函数名称(indexDemo)，需要与 src 中一致，而且要与文件地址中名一致。jsonp格式 名称({})
+    //不然无法获取到对应的文件    
+		imgLab=result;
+		return result.pw;
+    }
+   function creatImgDiv(indexStart,ImgNum,Id,imagpath,tag){
+	   var html='';
+	   var imagurl='images/index/portfolio/';
+	   var imagurlFull='images/index/gallery/';
+	   var commonStart1Code="<div class=\"col-xs-12 col-sm-6 col-md-3\">                <div class=\"sol\">                    <img class=\"img-responsive\" src=\""
+	   var commonStart2Code="\" alt=\"second category picture\">                    <div class=\"behind\">                        <div class=\"row box-content\">                        <ul class=\"list-inline text-center\">                   <li>                            <a class=\"gallery\" href=\""
+	   var commonEndCode="\" data-toggle=\"tooltip\" data-original-title=\"Quick View\">                              <i class=\"fa fa-eye\">View</i>                            </a>                          </li>							<li><i class=\"fa fa-home\"></i>";
+	   var commonEnd2Code="</li>                          <li><i class=\"fa fa-info\"></i></li> </ul></div></div></div></div> ";
+	   var yearLabel='loc'+imagpath;
+	   var yearName='path'+imagpath;
+	   var tagList=imgLab[yearLabel];
+	   var nameList=imgLab[yearName];
+	   for(var i=indexStart;i<Math.min(indexStart+ImgNum,tagList.length);i++){
+	   		tag=tagList[i];
+		   name=nameList[i];	   
+		   html+=commonStart1Code+imagurl+name+commonStart2Code+imagurlFull+name+commonEndCode+tag+commonEnd2Code;
+    	}
+	   var ImagCount=ImgNum+11;
+	   html+="<div class=\"col-xs-12 col-sm-6 col-md-3\"><button class=\"buttonimg\" onClick=\"creatImgDiv(1,"+ImagCount+",'"+Id+"','"+imagpath+"','"+tag+"')\">Load More</button></div>";
+	   document.getElementById(Id).innerHTML=html;
+   }
+   </script>
+<script type="text/javascript">
+// 两秒后度模拟点击
+	setTimeout(function() {
+// IE
+		if(document.all) {
+			document.getElementById("buttoneverything").click();
+			document.getElementById("but2016").click();
+			document.getElementById("but2017").click();
+			document.getElementById("but2018").click();
+			document.getElementById("but2019").click();
+			document.getElementById("but2020").click();
+			document.getElementById("butPainting").click();
+			document.getElementById("butVideo").click();
+}
+// 其它浏答览器
+		else {
+			var e = document.createEvent("MouseEvents");
+			e.initEvent("click", true, true);
+			document.getElementById("buttoneverything").dispatchEvent(e);
+			document.getElementById("but2016").dispatchEvent(e);
+			document.getElementById("but2017").dispatchEvent(e);
+			document.getElementById("but2018").dispatchEvent(e);
+			document.getElementById("but2019").dispatchEvent(e);
+			document.getElementById("butPainting").dispatchEvent(e);
+			document.getElementById("butVideo").dispatchEvent(e);
+}
+},200);
+</script>
+<script type="text/javascript" src="img_info.json?callback=imgLabel"></script>
+ </body>
+</html>

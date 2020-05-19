@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>the Journey of Love</title>
+
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<style>
+p{
+color:#fff;
+font-size:15px;
+text-shadow: 0 0 10px #529DFF;
+}
+</style>
+</head>
+<body>
+<div class="wrap about_page" id="wrap">
+  <div class="wrapper">
+    <div class="header">
+      <div class="head">
+	  
+        <div class="logo_box">         
+        </div>
+          <div class="nav_box">
+            <ul class="nav_list" id="nav_list">
+		 <li><a href="javascript:void(0);" onClick="play()" id="playbtn" class="btn_sound"></a></li>				
+            </ul>
+            <span class="ic_line" id="h_line"></span>
+          </div>
+      </div>
+    </div>
+    <div class="events_sec" id="events_sec">
+      <div class="content">
+        <h3 class="hide_txt png"> the journey of love</h3>
+
+		  <div class="container">
+        <form class="form" name="thisForm" action="#" method="GET" onsubmit="return formCheck()"><p align="center">
+          <table align="center">
+  		<tr>
+    		 <td><input type="password" style="font-size:20px;" name="password" placeholder="The Day?"/></td>	 
+  		</tr>
+			  <tr><td><input type="submit" style="font-size:20px;" name="sub" value="Log in"></td></tr>
+		</table>
+		</form>
+			  </div>
+	
+      </div>
+		
+    </div>
+    
+  </div>
+	
+</div>
+	
+
+<audio id="audios" controls="true" autoplay="autoplay" class="audio" style="display:none;"></audio>
+
+<script>
+var url=["14.215.93.15/m10.music.126.net/20170119210416/2cf400487c70a85e7673ab1973628893/ymusic/ad3a/66f4/100d/2c6236c74887407e82d3de5a334a9086.mp3","113.107.46.68/m10.music.126.net/20170119205747/145dd46f4a6f8184ac3c587c8d946f99/ymusic/6707/6491/7b3b/f1d05fa05186a7c990a6511f314cb06e.mp3"];
+var num = GetRandomNum(0,url.length-1);   
+document.getElementById("audios").src="http://"+url[num];
+function GetRandomNum(Min,Max)
+{
+var Range = Max - Min;   
+var Rand = Math.random();   
+return(Min + Math.round(Rand * Range));   
+}   
+
+function play(){
+var div = document.getElementById('playbtn'); 
+var obj=document.getElementById("audios");
+if(obj.paused){
+obj.play();
+div.setAttribute("class", "btn_sound"); 
+}else{
+obj.pause();
+div.setAttribute("class", "btn_sound btn_no_sound"); 
+}
+
+}
+</script>
+<script language="JavaScript" type="text/JavaScript">
+		function formCheck(){
+    		if(thisForm.password.value!="2016.7.1"){	
+    			alert("Wrong Password，try again！");
+				return false;
+  			}
+			self.location=("index.html");
+  			return false;
+}</script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+$('#login-button').click(function(event){
+	event.preventDefault();
+	$('form').fadeOut(500);
+	$('.wrapper').addClass('form-success');
+});
+</script>
+<script src="js/canvas-nest.min.js"></script>
+</body>
+</html>

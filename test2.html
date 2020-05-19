@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+ 
+<div id="myList">a</div>
+<p id="demo">单击按钮将项目添加到列表中</p>
+<button onclick="creatImgDiv()">点我</button>
+<script>
+function myFunction(){
+	var node=document.createElement("LI");
+	var textnode=document.createTextNode("Water");
+	node.appendChild(textnode);
+	document.getElementById("myList").appendChild(node);
+}
+</script>
+	<script>
+	function creatImgDiv(){
+    var body = document.getElementById("myList");
+    for(var i=1;i<2;i++){
+        var div = document.createElement('div');//创建div
+        var img = document.createElement('img');//创建img
+        img.setAttribute('src','images/index/portfolio/2019/Yunnan/'+i+'.jpg');
+        div.appendChild(img);//往div里添加属img
+        body.appendChild(div);//往body里添加div
+    }
+	}
+</script>
+<p><strong>注意:</strong><br>首先创建一个节点，<br> 然后创建一个文本节点，<br>然后将文本节点添加到LI节点上。<br>最后将节点添加到列表中。</p>
+ 
+</body>
+</html>
