@@ -54,14 +54,12 @@
          <div class="collapse navbar-collapse navbar-right" id="menu">
             <ul class="nav navbar-nav">
               <li class="active lien"><a href="#"><i class="fa fa-home sr-icons"></i> Home</a></li>
-      <!--         <li class=" lien"><a href="about.html"><i class="fa fa-bookmark sr-icons"></i> About</a></li>
-             <li class=" lien"><a href="blog.html"><i class="fa fa-file-text sr-icons"></i> Blog</a></li>
+              <li class=" lien"><a href="about.html"><i class="fa fa-bookmark sr-icons"></i> About</a></li>
+ <!--             <li class=" lien"><a href="blog.html"><i class="fa fa-file-text sr-icons"></i> Blog</a></li>
               <li><a href="contact.html"><i class="fa fa-phone-square sr-icons"></i> Contact</a></li>-->
             </ul>
          </div>
-		 <audio controls="" autoplay="autoplay" loop="loop"><source src="wedding in dream.mp3" type="audio/ogg"></audio>
      </div>
-	   
    </nav>
 <!-- End of Navigation Bar -->
 
@@ -75,13 +73,9 @@
                <div class="item active">
                 <img class="img-responsive" src="images/index/background.jpg" alt="header picture">
                </div>
-               <div class="carousel-caption" style="padding: 10px; margin-left: 120px; margin-bottom: -100px;">
+               <div class="carousel-caption">
                  <h1>SN &amp; XW</h1>
                  <hr>
-				   <div id="messages">
-						Nan, I have fallen in love with you for
-						<div id="elapseClock"></div>
-					</div>
                </div>
             </div>
          </div>
@@ -198,7 +192,20 @@
     <!-- End of Navigation Table Content -->
       </div><!-- End of Index-body box -->
 
-
+    <!-- Newsletter form -->
+      <div class="index-form text-center">
+        <h3>SUSCRIBE TO OUR NEWSLETTER </h3>
+        <h5>Suscribe to receive our News and Gifts</h5>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <div class="col-xs-12 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+            <input class="form-control" type="text" placeholder="Type here your email address">
+            <a href="" class="btn btn-lg sr-button">SUBSCRIBE</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    <!-- End of Newsletter form -->  
 
     <!-- Box within partners name and logo -->
       <div class="last-box row">
@@ -211,9 +218,20 @@
    <!-- Footer -->
    <footer class="home-page">
      <div class="container text-muted text-center">
-       <div class="row" align="center">
-         <ul class="nav col-sm-12" align="center">
-           <li class="footer-number" align="center"><em class="fa fa-phone sr-icons"></em> (+86) 18810695762&nbsp; &nbsp; &nbsp; <em class="fa fa-envelope sr-icons"></em> z645916403@outlook.com&nbsp; &nbsp; &nbsp; &nbsp;Copyright&copy;XiaoWei.  All rights reserved.</li>
+       <div class="row">
+         <ul class="nav col-sm-4">
+           <li class="footer-number"><i class="fa fa-phone sr-icons"></i> (+86) 18810695762 </li>
+           <li><em class="fa fa-envelope sr-icons"></em> z645916403@outlook.com</li>
+           <li>Copyright &copy; 2020. SN &amp; XW. </li>
+           <li>All rights reserved.</li>
+         </ul>
+         <ul class="list-inline social-buttons col-sm-4 col-sm-push-4">
+            <li><a href="#"><i class="fa fa-facebook sr-icons"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-twitter sr-icons"></i></a>
+            </li>
+            <li><a href="#"><i class="fa fa-google-plus sr-icons"></i></a>
+            </li>
          </ul>
        </div>
      </div>
@@ -228,7 +246,6 @@
    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
    <script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/TimeCalculator.js"></script>
 <script>
 	var imgLab;
 	function imgLabel(result){
@@ -287,35 +304,6 @@
 }
 },200);
 </script>
-<!--<script type="text/javascript">
-	function datacalculator(){
-		var current_date=new Date();
-		current_date.setFullYear(2016, 7, 1)
-		var t=current_date.toLocaleTimeString();
-		var d=current_date.toLocaleDateString();
-		document.getElementById("elapseClock").innerHTML=d+"&nbsp"+t;
-	}
-	setInterval(function() {datacalculator()},1000)
-	</script>
-	-->
-<script type="text/javascript">
-		var together = new Date();
-		together.setFullYear(2016, 7, 1);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 1000);
-
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
-			
-	</script>
 <script type="text/javascript" src="img_info.json?callback=imgLabel"></script>
  </body>
 </html>
