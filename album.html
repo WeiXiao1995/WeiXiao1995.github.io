@@ -274,9 +274,10 @@
 	<script type="text/javascript">
 		var lastPage=document.referrer;
 		document.getElementById("mp3").innerHTML=lastPage;
-		if(lastPage!='http://www.shengnan-xiaowei.com/album.html'){
+		if(lastPage!="http://www.shengnan-xiaowei.com" && lastPage!="www.shengnan-xiaowei.com"){
 			alert(lastPage);
-			alert(lastPage!="http://www.shengnan-xiaowei.com/album.html");
+			alert(lastPage!="http://www.shengnan-xiaowei.com");
+			alert(lastPage!="www.shengnan-xiaowei.com");
 			window.location.href='index.html'; 
 		}
 	</script>
