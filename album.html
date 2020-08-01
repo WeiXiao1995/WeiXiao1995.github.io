@@ -272,9 +272,11 @@
    }
    </script>
 	<script type="text/javascript">
-		var lastPage=document.referrer;
-		document.getElementById("mp3").innerHTML=lastPage;
+		var lastPage=document.referrer;		
 		if(lastPage!="http://www.shengnan-xiaowei.com" && lastPage!="www.shengnan-xiaowei.com" && lastPage!="http://www.shengnan-xiaowei.com/" && lastPage!="www.shengnan-xiaowei.com/" &&lastPage!="www.shengnan-xiaowei.com/index.html" && lastPage!="http://www.shengnan-xiaowei.com/index.html"){
+			document.getElementById("mp3").innerHTML=lastPage;
+			alert(lastPage);
+			alert(lastPage!="http://www.shengnan-xiaowei.com/");
 			alert("Unauthorized");
 			window.location.href='index.html'; 
 		}
