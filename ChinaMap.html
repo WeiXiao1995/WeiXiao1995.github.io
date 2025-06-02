@@ -44,7 +44,7 @@ function getEcharts(){
             myChart2.setOption({
 				dataRange: {
 					min : 16,
-					max : 20,
+					max : 25,
 					calculable : true,
 					color: ['#ff3333', 'orange', 'yellow','lime','aqua'],
 					textStyle:{
@@ -201,7 +201,10 @@ function getEcharts(){
 							'桂林': [110.2901,25.2735],
 							'长岛': [120.7428,37.9275],
 							'丽江': [100.23,26.88],
-							'庐山': [115.878,28.7104],
+							'庐山': [115.878, 28.7104],
+							'海拉尔': [119.7357, 49.2134],
+                            '林芝': [94.3615, 29.6489],
+                            '赛里木湖': [81.1167, 44.6000],
 							'聊城': [115.9918,36.4570]
 						},
 						markPoint : {
@@ -230,7 +233,13 @@ function getEcharts(){
 								{name:'呼和浩特',value:17},
 								{name:'昆明',value:19},
 								{name:'丽江',value:19},
-								{name:'北京',value:20},
+								{ name: '北京', value: 20 },
+                                { name: '海拉尔', value: 24 },
+								{ name: '乌鲁木齐', value: 23 },
+                                { name: '赛里木湖', value: 23 },
+								{ name: '拉萨', value: 21 },
+                                { name: '林芝', value: 21 },
+                                { name: '长春', value: 25 },
 								{name:'庐山',value:18},
 								{name:'西宁',value:16},
 								{name:'长岛',value:17},
@@ -264,8 +273,14 @@ function getEcharts(){
 								}
 							},
 							data : [
-								[{name:'北京'}, {name:'昆明',value:19}],
-								[{name:'北京'}, {name:'丽江',value:19}],
+								[{ name: '北京' }, { name: '长春', value: 25 }],
+								[{ name: '北京' }, { name: '拉萨', value: 21 }],
+                                [{ name: '拉萨' }, { name: '林芝', value: 21 }],
+								[{ name: '北京' }, { name: '乌鲁木齐', value: 23 }],
+                                [{ name: '乌鲁木齐' }, { name: '赛里木湖', value: 23 }],
+								[{ name: '北京' }, { name: '海拉尔', value: 24 }],
+								[{ name: '北京' }, { name: '昆明', value: 19 }],
+                                [{ name:'昆明'}, {name:'丽江',value:19}],
 								[{name:'北京'}, {name:'呼和浩特',value:17}],
 								[{name:'合肥'}, {name:'西宁',value:16}],
 								[{name:'合肥'}, {name:'兰州',value:16}],
